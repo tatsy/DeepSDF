@@ -1,0 +1,28 @@
+name: deepsdf
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+dependencies:
+  - imageio
+  - numpy
+  - numpy-base
+  - matplotlib
+  - matplotlib-base
+  - pandas
+  - pillow
+  - pyembree
+  - pytest
+  - python
+  - pytorch
+  - pyyaml
+  - scikit-image
+  - scipy
+  - torchvision
+  - tqdm
+  - trimesh
+  - pip
+  - pip:
+    - h5py
+    - plyfile
+
