@@ -73,7 +73,7 @@ RUN cd $SRC_ROOT && mkdir build && cd build && \
     cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_STANDARD=17 .. && \
     make -j && make install
 
-RUN conda env create --file environment.yaml
+RUN cd $SRC_ROOT && conda env create --file environment.yaml
 RUN echo "conda activate $CONDA_ENV" >> ~/.zshrc
 
 WORKDIR $SRC_ROOT
